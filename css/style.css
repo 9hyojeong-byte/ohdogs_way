@@ -32,6 +32,8 @@ body {
   font-family: 'Poor Story', 'Apple SD Gothic Neo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 h1, h2 {
