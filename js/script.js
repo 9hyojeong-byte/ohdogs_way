@@ -114,11 +114,8 @@
   var btnKakao = document.getElementById('btnKakao');
   if (btnKakao) {
     btnKakao.addEventListener('click', function () {
-      var scheme = 'kakaonavi://navigate?name=' + encodeURIComponent(DEST.name) +
-        '&x=' + DEST.lng + '&y=' + DEST.lat + '&coord_type=wgs84';
-      var fallback = storeFallback('417698849', 'com.locnall.KimGiSa',
-        'https://map.kakao.com/link/search/' + encodeURIComponent(DEST.address));
-      openApp(scheme, fallback);
+      window.location.href = 'https://map.kakao.com/link/to/' +
+        encodeURIComponent(DEST.name) + ',' + DEST.lat + ',' + DEST.lng;
     });
   }
 })();
